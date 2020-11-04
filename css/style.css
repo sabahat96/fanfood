@@ -1,0 +1,730 @@
+@font-face {
+	font-family: "Champion-Heviweight";
+	src: url(../fonts/Champion-Heviweight.otf);
+}
+@font-face {
+	font-family: "AkzidReguler";
+	src: url(../fonts/AkzidReguler.otf);
+}
+@font-face {
+	font-family: "AkzidBold";
+	src: url(../fonts/AkzidBold.otf);
+}
+@font-face {
+	font-family: "AkzidLight";
+	src: url(../fonts/AkzidLight.otf);
+}
+@font-face {
+	font-family: "AkzidMedium";
+	src: url(../fonts/AkzidMedium.otf);
+}
+
+input.text:focus, input.title:focus, input[type=text]:focus, select:focus, textarea:focus {
+     outline: 0 !important;
+}
+button:focus,
+input:focus {
+    outline: 0 !important;
+    color: inherit !important;
+    border: 3px solid #ddd !important;
+}
+.accordion-item {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+.accordion-title {
+    font-size: 36px;
+    font-family: "AkzidMedium";
+    font-weight: normal;
+    background-color:rgb(250 250 250);
+    color: rgb(0 0 0);
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+    border: none;
+
+}
+.accordion-title:before {
+    background-image: url(../images/accordion-icon.png) !important;
+    content: "";
+    height: 17px;
+    width: 47px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3%;
+    transform: translatey(100%);
+}
+.accordion-title.active:before {
+    transform: rotateX(180deg);
+    margin-top: 20px;
+}
+.accordion-title:hover,
+.accordion-title.active {
+    color: rgb(218 17 46);
+    background-color: rgb(250 250 250);
+}
+.accordion-title .fas::before {
+    display: inline-block;
+}
+.accordion-title.active .fas::before {
+    transform: rotate(180deg);
+}
+.accordion-content {
+    padding: 40px;
+    display: none;
+    background-color:rgb(250 250 250);
+}
+.accordion-content label span,
+.error {
+    color: rgb(218 17 46);;
+}
+
+
+/* -------E-Commerce Styling------ */
+.e-commerce-form input {
+    margin-bottom: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: unset;
+}
+.e-commerce-form label {
+    margin-bottom: 0;
+    font-family: "AkzidReguler";
+    font-size: 18px;
+}
+input:focus {
+    outline: 0 !important;
+    box-shadow: unset !important;
+}
+.next-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(218 17 46);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: all 0.3s;
+    font-family: "AkzidMedium";
+}
+.cmplt-ordr-btn {
+    padding: 12px 46.5px;
+    background-color: rgb(218 17 46);
+    font-size: 20px;
+    font-family: "AkzidMedium";
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(218 17 46);;
+    transition: all 0.3s;
+}
+.next-btn:hover,
+.cmplt-ordr-btn:hover {
+    background-color: transparent;
+    color:  rgb(218 17 46);
+}
+.vanity-input {
+    display: flex;
+    align-items: center;
+}
+
+.vanity-input .form-group {
+    width: 30%;
+}
+.vanity-input input {
+    width: 100%;
+}
+.vanity-url-text {
+    font-style: italic;
+}
+.vanity-url-text p {
+   margin: 0 0 0 10px;
+   font-family: "AkzidReguler";
+   font-size: 18px;
+}
+.marketing-footer {
+    margin-left: 35px;
+}
+.footer-text p {
+    font-size: 13px;
+    color: rgb(71 67 80);
+    font-family: "AkzidBold";
+}
+.hardware-h4 {
+    font-size: 24px;
+    color: rgb(218 17 46);
+    font-weight: 600;
+}
+.hardware-para {
+    font-size: 24px;
+    color: rgb(218 17 46);
+}
+p.hardware-p {
+    color: rgb(71 67 80);
+    margin-top: 20px;
+    font-family: "AkzidMedium";
+    margin-bottom: 0;
+}
+p.red {
+    font-family: "AkzidMedium";
+}
+.accordion-content label span, .error {
+    color: rgb(218 17 46);
+    font-size: 14px !important;
+}
+p.total-order-heading {
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+p.total-order {
+    font-size: 36px;
+}
+p:not(.has-background):last-of-type {
+    padding-bottom: 0;
+}
+
+
+.box-img {
+    height: 175px;
+}
+
+.second-accordion .box-img img {
+    width: auto;
+}
+.boxes .box-content h2 {
+	font-size: 14px;
+	font-family: "AkzidMedium";
+	color: rgb(71 67 89);
+	padding-bottom: 0;
+}
+.boxes .box-content p {
+	font-size: 18px;
+	font-family: "AkzidLight";
+	color: rgb(71 67 89);
+}
+.img-boxes {
+    display: flex;
+    text-align: center;
+}
+.img-boxes .img {
+    width: 25%;
+}
+.img-boxes .img img {
+    width: auto;
+}
+.hardware-imgs {
+    background-color: rgb(243 243 243);
+    border: 2px solid rgb(243 243 243);
+    transition: all 0.3s;
+}
+.hardware-box-5 {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(243 243 243);
+    border-radius: 10px;
+    border: 2px solid  rgb(243 243 243);
+    transition: all 0.3s;
+}
+p.red,
+.price {
+    color: rgb(218 17 46);
+}
+.image-content {
+    text-align: left;
+}
+.box-img {
+    text-align: center;
+}
+.box-5 .image-content {
+    text-align: left;
+}
+.table {
+    background-color: rgb(243 243 243);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.table td,
+.table th,
+.table thead th {
+    border: none;
+    font-family: 'AkzidMedium';
+}
+.right {
+    text-align: end;
+    font-family: "AkzidReguler" !important;
+    font-size: 18px;
+}
+tr.inner {
+    color: rgb(218 17 46);
+}
+tr.inner td {
+    padding: 0 10px 0 20px !important;
+}
+td.pading-inner {
+    font-size: 12px;
+}
+.padding-0 {
+    padding-bottom: 0 !important;
+}
+.billing-address,
+.Payment-address {
+    color: rgb(71 67 80);
+    font-size: 24px;
+    font-family: "AkzidBold";
+}
+.billing-checkbox {
+    width: auto !important;
+}
+.same-address-checkbox {
+    color: rgb(71 67 80);
+    font-size: 13px;
+    font-family: "AkzidReguler";
+}
+.payment-sec {
+    padding-left: 0;
+}
+
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li img {
+    width: 181px;
+    height: 50px;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current{
+    background-color: #fff;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    color: #222;
+    border-radius: 10px 10px 0px 0;
+}
+
+.tab-content{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+.congratulation-msg h2 {
+    font-size: 36px;
+    color: rgb(218 17 46);
+    font-family: "AkzidBold";
+}
+.congratulation-msg p {
+    font-size: 24px;
+    color: rgb(218 17 46);
+    font-family: "AkzidReguler";
+}
+
+.entry-content ul {
+    padding-left: 0px !important;
+    padding-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+.second-accordion label {
+    display:block;
+    border: 2px solid rgb(139 139 139);
+    background-color: rgba(255 255 255);
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+}
+.second-accordion label:hover {
+    border: 2px solid rgb(218 17 46);
+    cursor: pointer;
+}
+
+.second-accordion input[type=checkbox] {
+    display: none;
+}
+
+.second-accordion input:checked + label {
+    border: 2px solid rgb(218 17 46);
+    color: rgb(218 17 46);;
+}
+
+.second-accordion input:checked + label:before {
+    content: none;
+}
+
+.third-accordion label {
+    display:block;
+    border: 2px solid rgb(243 243 243);
+    background-color: rgb(243 243 243);;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+    width: 100%;
+}
+.box5label label {
+    width: auto;
+}
+
+.third-accordion label:hover {
+    border: 2px solid rgb(218 17 46);
+    cursor: pointer;
+}
+
+
+.third-accordion input[type=checkbox] {
+    display: none;
+}
+
+
+.third-accordion input:checked + label {
+    border: 2px solid rgb(218 17 46);
+    color: rgb(218 17 46);;
+}
+
+
+
+
+/* new stuff */
+.second-accordion .check,
+.third-accordion .check  {
+    visibility: hidden;
+}
+
+.second-accordion input:checked + label .check,
+.third-accordion input:checked + label .check {
+    visibility: visible;
+}
+
+.second-accordion input.checkbox:checked + label:before,
+.third-accordion input.checkbox:checked + label:before {
+    content: "";
+}
+.marketing-next-btn {
+    margin-left: 35px;
+}
+
+/* ---------Confirm Signup page Styling-------- */
+.confirm-signup-content .boxes,
+.confirm-signup-content .boxes .heading {
+    display: flex;
+    align-items: center;
+}
+.confirm-signup-content .boxes .heading h2 {
+    color: rgb(0 0 0);
+    font-size: 24px;
+    font-family: "AkzidBold";
+}
+h2.number.third-number {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(218 17 46) !important;
+    font-size: 24px !important;;
+    font-family: "AkzidBold" !important;;
+}
+.confirm-signup-content .boxes .heading h2:last-child {
+    padding-top: 15px;
+}
+h2.number {
+    margin-right: 25px;
+    padding: 9px 16px;
+    border-radius: 100%;
+    background-color: rgb(255 255 255);
+    box-shadow: 0 0 6px rgb(210 210 255);
+}
+.table-container {
+    background-color: rgb(243 243 243) !important;
+    box-shadow: 0 0 6px rgb(210 210 255);
+    border-radius: 10px;
+}
+table.confirm-signup-table {
+    width: 80% !important;
+    border: unset !important;
+}
+tr.inner td,
+tfoot tr td {
+    font-family: "AkzidReguler";
+}
+.box-content .contents {
+    background-color: rgb(243 243 243) !important;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(210 210 255);
+    padding: 20px;
+}
+.box-content .contents.last-box-content {
+    margin-top: 15px;
+}
+.confirm-signup-content .box-content .contents p {
+    margin-bottom: 0 !important;
+    font-size: 18px;
+    color: rgb(0 0 0);
+    font-family: "AkzidMedium";
+}
+table.table.confirm-signup-table tr {
+    border-bottom: unset !important;
+}
+.confirm-signup-table tbody tr td.padding-top {
+    padding-top: 15px !important;
+}
+.confirm-signup-table tbody tr td {
+    padding-left: 10px !important;
+}
+.confirm-signup-table tfoot {
+    border-top: 2px solid rgb(139 139 139);
+}
+.scroll-area-heading {
+    margin-top: 100px;
+}
+.scroll-area-heading h2,
+.third-number {
+    color: rgb(218 17 46);
+    font-size: 24px;
+    font-family: "AkzidBold";
+}
+.scrolled-area {
+    height: 200px;
+    border: 3px solid rgb(243 243 243);
+    overflow-y: auto;
+    background-color: rgb(255 255 255) !important;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.scrolled-area p {
+    font-family: "AkzidReguler";
+    font-size: 18px;
+}
+.scrolled-area::-webkit-scrollbar {
+    width: 7px;
+}
+.scrolled-area::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(243 243 243); 
+    border-radius: 5px;
+}
+.scrolled-area::-webkit-scrollbar-thumb {
+    background:rgb(218 17 46); 
+    border-radius: 5px;
+}
+.confirm-signup-name-input {
+    padding-top: 10px;
+}
+.confirm-signup-name-input label {
+    font-size: 16px;
+    font-family: "AkzidReguler";
+}
+.confirm-signup-name-input input {
+    border: 3px solid rgb(243 243 243);
+    border-radius: 10px;
+    font-style: italic;
+    padding: 20px;
+    max-width: 70%;
+    transition: all 0.3s;
+}
+.entry-content tr td, body.et-pb-preview #main-content .container tr td {
+    border-top: 0;
+}
+.bottom-btn {
+    bottom: 20px;
+    position: absolute;
+    right: 6%;
+}
+
+.scrolled-section ol {
+    counter-reset: item;
+}
+.scrolled-section li {
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.scrolled-section li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+}
+button#but1:focus {
+    outline: 0 !important;
+}
+button#but1 {
+    color: rgb(255 255 255);
+    background-color: rgb(218 17 46);
+    border: 1px solid rgb(218 17 46);
+    box-shadow: 0 0 6px rgb(210 210 255);
+    border: unset;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+button#but1:hover {
+    background-color: rgb(255 255 255);
+    color: rgb(218 17 46);
+}
+
+
+
+
+@media only screen and (min-width: 1141px) {
+    .boxes.box-5 .box-img {
+        height: 154px;
+    }
+}
+@media only screen and (min-width:992px) and (max-width: 1140px) {
+    .boxes .box-content h2 {
+        font-size: 0.9vw;
+    }
+}
+@media only screen and (max-width: 991px) {
+	.marketing-material {
+		flex-direction: column;
+	}
+	.marketing-material .boxes .box-img {
+		height: auto;
+	}
+	.marketing-material .boxes {
+		width: 50%;
+		margin: 10px auto;
+	}
+}
+@media only screen and (max-width:980px) {
+    .accordion-content {
+        padding: 40px 10px;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    ul.tabs li img {
+        width: 150px;
+        height: 42px;
+    }
+    .cmplt-ordr-btn {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    ul.tabs li {
+        display: block;
+        text-align: center;
+    }
+    ul.tabs li.current {
+        box-shadow: none;
+        background-color: unset;
+    }
+    .accordion-title {
+        font-size: 17px;
+    }
+    .accordion-title:before {
+        transform: translatey(30%);
+    }
+    .next-btn {
+        padding: 8px 55px;
+    }
+    .vanity-input .form-group {
+        width: 50%;
+    }
+    .box-img {
+        height: auto;
+    }
+    .boxes .box-content h2 {
+        font-size: 13px;
+    }
+    .img-boxes {
+        flex-direction: column;
+    }
+    .img-boxes .img,
+    .box5label label {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 13px;
+    }
+    .footer-text p {
+        text-align: center;
+    }
+    .payment-sec {
+        padding-left: 0 !important;
+    }
+    .confirm-signup-content .boxes .heading h2 {
+        font-size: 17px;
+    }
+    .row.boxes {
+        margin-top: 30px;
+    }
+    .confirm-signup-content .boxes, .confirm-signup-content .boxes .heading {
+        flex-direction: column;
+    }
+    h2.number {
+        margin-right: 0;
+    }
+    .confirm-signup-name-input input {
+        max-width: 100%;
+    }
+    button.btn-sm.next-btn.confirm-signup-btn {
+        padding: 8px 0 !important;
+    }
+    .scroll-area-heading h2, .third-number {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width:479px) {
+    .vanity-url-text p {
+        font-size: 10px;
+    }
+    .e-commerce-form label,
+    .hardware-h4,
+    .hardware-para,
+    p.hardware-p,
+    .congratulation-msg p {
+        font-size: 12px;
+    }
+    .marketing-footer {
+        margin-left: 0;
+    }
+    .cmplt-ordr-btn {
+        padding: 12px 30.5px;
+        font-size: 10px;
+    }
+    .congratulation-msg h2 {
+        font-size: 17px;
+    }
+    .accordion-title:before {
+        width: 65px;
+        margin-top: 0 !important;
+    }
+    .accordion-title {
+        font-size: 14px;
+    }
+    .congratulation-msg {
+        margin: 0;
+        text-align: center;
+    }
+    .marketing-next-btn {
+        margin-left: 0;
+    }
+    .vanity-input label {
+        font-size: 10px !important;
+    }
+    .bottom-btn {
+        right: 9%;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
